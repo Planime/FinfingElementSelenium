@@ -21,7 +21,7 @@ class LoginTests(unittest.TestCase):
         lp = LoginPage(driver)
         lp.login("test@email.com", "abcabc")
 
-        userIcon = driver.find_element(By.XPATH, '//*[@id="navbar"]/div/div/div/ul/li[4]/a')
+        userIcon = driver.find_element(By.XPATH, '//*[@id="udemy"]/div[2]/div[2]/div[1]/div[1]/a/img')
         if userIcon is not None:
             print("Login Successful")
         else:
